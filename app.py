@@ -62,8 +62,7 @@ def upload():
                         ), 201
     except Exception as e:
         print(e)
-        return jsonify( id = 1,
-                        status = 'FAILED',
+        return jsonify( status = 'FAILED',
                         msg = 'failed',
                         data = 'no data saved',
                         error = True
