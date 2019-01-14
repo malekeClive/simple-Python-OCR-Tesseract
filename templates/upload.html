@@ -1,0 +1,15 @@
+{% extends 'form.html' %}
+{% block body %}
+<div style="  background-color: #f5f6fa; border: 10px solid #30336b; border-radius: 7px; padding: 5em; margin: 5em;">
+    <form action="" method="POST" enctype="multipart/form-data">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="file" style="margin-bottom: -15em;">Input the image please...</label>
+            <hr>
+            <input type="file" class="form-control-file" id="file" name="filename">
+        </div>
+        <div style="float: right;">
+            <input type="submit" class="btn mb-2" value="Submit" style="padding-left: 5em; padding-right: 5em; background-color: #30336b; color: white;">
+        </div>
+    </form>
+</div>
+{% endblock %}
